@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+        Додаткові завдання
+        Завдання
+        За допомогою prompt попросіть користувача ввести пропозицію. Виведіть на екран кількість слів у цій пропозиції.
+    </pre>
+
+    <script>
+      // Запитуємо користувача ввести пропозицію
+      const userInput = prompt("Будь ласка, введіть пропозицію:");
+
+      // Перевіряємо, чи користувач ввів щось
+      if (userInput) {
+        // Розділяємо рядок на слова за допомогою пробілів
+        const words = userInput.split(" ");
+        // const words = userInput.trim().split(/\s+/);
+
+        // Виводимо кількість слів
+        alert(
+          `Кількість слів у вашій пропозиції: ${words.length}\r\nПропозиція: ${userInput}`
+        );
+      } else {
+        alert("Ви не ввели жодної пропозиції.");
+      }
+    </script>
+  </body>
+</html>

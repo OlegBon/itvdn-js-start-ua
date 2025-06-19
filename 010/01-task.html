@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+  </head>
+  <body>
+    <pre>
+        Завдання:
+        Запросіть у користувача ввести назву міста. Видаліть це місто з елементів массиву.
+        Якщо міста немає в массиві, сповістіть про це користувача.
+        Виведіть массив на екран після видалення елементів.
+    </pre>
+    <script>
+      let cities = [
+        "London",
+        "Paris",
+        "Berlin",
+        "Rome",
+        "Budapest",
+        "Lisbon",
+        "Madrid",
+        "Amsterdam",
+      ];
+
+      console.log(`Початковий список міст: ${cities.join(", ")}`);
+
+      let cityToRemove = prompt(
+        `Ось які є міста: ${cities.join(
+          ", "
+        )}\r\nВведіть назву міста, яке потрібно видалити:`
+      );
+      let index = cities.indexOf(cityToRemove);
+
+      if (index == -1) {
+        alert("Вказане місто не знайдене.");
+      } else {
+        cities.splice(index, 1);
+        alert(
+          `Місто "${cityToRemove}" видалено.\r\nОсь оновлений список міст: ${cities.join(
+            ", "
+          )}`
+        );
+        console.log(`Оновлений список міст: ${cities.join(", ")}`);
+      }
+    </script>
+  </body>
+</html>
