@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 7</title>
+  </head>
+  <body>
+    <pre>
+        Завдання:
+        Дано массив. Знайдіть середнє арифметичне значення цього массиву.
+        Виведіть на екран тільки ті значення, які більше цього цього середнього арифметичного значення.
+    </pre>
+    <script>
+      let values = [
+        10, 20, 48, 6, 11, 9, 125, 1, 8, 0, 3, 255, 77, 11, 170, 4, 28,
+      ];
+      let sum = 0;
+      let count = 0;
+
+      for (let i = 0; i < values.length; i++) {
+        sum += values[i];
+        count++;
+      }
+
+      let average = (sum / count).toFixed(2); // Обчислюємо середнє арифметичне значення
+      console.log("Середнє арифметичне значення:", average);
+
+      let valuesNew = [];
+
+      for (const value of values) {
+        if (value > average) {
+          console.log("Значення більше середнього арифметичного:", value);
+          valuesNew.push(value); // Додаємо значення, що більше середнього арифметичного, до нового масиву
+        }
+      }
+
+      console.log("Значення більше середнього арифметичного:", valuesNew);
+    </script>
+  </body>
+</html>

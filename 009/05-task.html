@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+  </head>
+  <body>
+    <pre>
+        Завдання:
+        Знайдіть перший позитивний елемент массива та виведіть його на екран.
+    </pre>
+    <script>
+      let values = [-1, -5, -6, -3, -10, -5, 3, 4, -1, -8, 1, -10, 3];
+
+      let firstPositive = null;
+
+      for (let i = 0; i < values.length; i++) {
+        if (values[i] > 0) {
+          firstPositive = values[i];
+          break;
+        }
+      }
+
+      console.log("Перший позитивний елемент:", firstPositive);
+    </script>
+  </body>
+</html>
