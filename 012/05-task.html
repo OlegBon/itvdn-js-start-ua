@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task X</title>
+  </head>
+  <body>
+    <pre>
+        Завдання:
+        Запитайте у користувача число. Виведіть всі числа в зворотньому порядку від введеного користувачем значення до 1. 
+        Використовуйте для рішення рекусію.
+    </pre>
+    <script>
+      function printReverse(num) {
+        if (num < 1) return; // Базовий випадок: якщо число менше 1, виходимо з функції
+        console.log(num); // Виводимо поточне число
+        printReverse(num - 1); // Рекурсивний виклик зменшеного числа
+      }
+
+      const userInput = +prompt("Введіть число:");
+
+      if (!isNaN(userInput) && userInput > 0) {
+        printReverse(userInput); // Викликаємо функцію для виведення чисел у зворотньому порядку
+      } else {
+        console.log("Будь ласка, введіть коректне додатнє число.");
+      }
+    </script>
+  </body>
+</html>
