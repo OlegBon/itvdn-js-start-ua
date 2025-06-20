@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+        Додаткові завдання
+        Завдання
+        Створіть функцію, яка приймає два параметри та повертає суму значень цих параметрів. Викличте функцію з двома довільними значеннями та відобразіть результат роботи функції на екрані.
+    </pre>
+    <script>
+      function sum(a, b) {
+        return a + b;
+      }
+
+      // const randomValue1 = Math.floor(Math.random() * 100); // Генеруємо випадкове значення від 0 до 99
+      // const randomValue2 = Math.floor(Math.random() * 100); // Генеруємо випадкове значення від 0 до 99
+
+      do {
+        const randomValue1 = Math.floor(Math.random() * 100); // Генеруємо випадкове значення від 0 до 99
+        const randomValue2 = Math.floor(Math.random() * 100); // Генеруємо випадкове значення від 0 до 99
+
+        alert(
+          `Згенеровані значення: ${randomValue1} і ${randomValue2}\r\nСума цих значень дорівнює: ${sum(
+            randomValue1,
+            randomValue2
+          )}`
+        );
+      } while (confirm("Бажаєте згенерувати нові значення?"));
+
+      // const result = sum(randomValue1, randomValue2);
+      // console.log(`Сума ${randomValue1} і ${randomValue2} дорівнює: ${result}`);
+    </script>
+  </body>
+</html>

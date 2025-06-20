@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+  </head>
+  <body>
+    <pre>
+        Завдання:
+        Створіть функцію min(a, b), яка повертає мнше число з чисел а и b
+    </pre>
+    <script>
+      function min(a, b) {
+        return a < b ? a : b;
+      }
+
+      // Генеруємо випадкові значення від 0 до 99
+      const randomValue1 = Math.floor(Math.random() * 100);
+      const randomValue2 = Math.floor(Math.random() * 100);
+
+      // Виводимо згенеровані значення
+      console.log(`Згенеровані значення: ${randomValue1} і ${randomValue2}`);
+
+      // Викликаємо функцію min і виводимо результат
+      const result = min(randomValue1, randomValue2);
+      console.log(`Меньше значення - ${result}`);
+    </script>
+  </body>
+</html>

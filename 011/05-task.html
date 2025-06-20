@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+  </head>
+  <body>
+    <pre>
+        Завдання:
+        Створіть функцію, яка приймає массив значень та повертає массив з дублючими значеннями або null якщо значень, що повторюються, в массиві немає.
+    </pre>
+    <script>
+      let values1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1, 2];
+      let values2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+      function findDuplicates(arr) {
+        let duplicates = [];
+
+        for (let i = 0; i < arr.length; i++) {
+          let count = 0;
+
+          for (let j = 0; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
+              count++;
+            }
+          }
+
+          if (count > 1 && !duplicates.includes(arr[i])) {
+            duplicates.push(arr[i]);
+          }
+        }
+
+        return duplicates.length > 0 ? duplicates : null;
+      }
+
+      console.log(findDuplicates(values1)); // [1, 2]
+      console.log(findDuplicates(values2)); // null
+    </script>
+  </body>
+</html>
