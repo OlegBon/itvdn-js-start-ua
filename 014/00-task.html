@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+        Додаткові завдання
+        Завдання
+        Створіть функцію, яка виводить в консоль значення контексту. Змініть налаштування проєкту таким чином, щоб значення контексту функції дорівнювало undefined.
+    </pre>
+
+    <script>
+      "use strict"; // Додаємо 'use strict' для обмеження контексту (undefined)
+      function printContext() {
+        console.log(this);
+      }
+
+      printContext();
+    </script>
+  </body>
+</html>
