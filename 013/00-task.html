@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+        Додаткові завдання
+        Завдання
+        У сценарії за допомогою літералу створіть об'єкт із двома властивостями firstName та age. Додайте в нього метод sayHello, який виведе на екран повідомлення «Привіт, мене звуть X, мені Y років.», використовуючи значення властивостей замість X та Y.
+    </pre>
+
+    <script>
+      let user = {
+        firstName: "John",
+        age: 30,
+        sayHello: function () {
+          console.log(
+            `Привіт, мене звуть ${this.firstName}, мені ${this.age} років.`
+          );
+        },
+      };
+
+      user.sayHello(); // Виведе: Привіт, мене звуть John, мені 30 років.
+    </script>
+  </body>
+</html>
